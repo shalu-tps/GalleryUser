@@ -1,0 +1,8 @@
+<h1 style="text-align:center">Lists of Users</h1>
+<ul *ngFor="let d of dt">
+    <li>Userid:{{d.userId}}</li>
+    <li>Id:{{d.id}}</li>
+    <li>Title:{{d.title}}</li>
+  <button class="btn btn-success" (click)="goTo()">List Photos</button>
+</ul>
+<router-outlet></router-outlet>
