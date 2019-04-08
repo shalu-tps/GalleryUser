@@ -27,4 +27,7 @@ goTo() {
     // open lightbox
     this.lightbox.open(this.album, index);
   }
+  back() {
+    this.router.navigate(['/album']);
+  }
 }

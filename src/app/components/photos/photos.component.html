@@ -1,4 +1,5 @@
 <h1 style="text-align:center">Lists of Photos</h1>
+<button (click)="back()" class="btn btn-success">Back</button>
 <ul *ngFor="let d of dt">
     <li>Userid:&nbsp;{{d.albumId}}</li>
     <li>Id:&nbsp;{{d.id}}</li>
@@ -6,7 +7,6 @@
     <li>Url:&nbsp;{{d.url}}</li>
     <li>ThumbnailUrl:&nbsp;{{d.thumbnailUrl}}</li>
   <button class="btn btn-success" (click)="goTo()">View Photos</button>
-
   <div *ngIf="d.url; let i=index">
     <img [src]="d.thumb" (click)="open(i)"/>
   </div>
